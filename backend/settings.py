@@ -41,10 +41,10 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'corsheaders',
+    'django_extensions',
 
     'api',
 ]
-
 
 
 MIDDLEWARE = [
@@ -128,14 +128,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-AUTH_USER_MODEL = "api.CustomUser"
+AUTH_USER_MODEL = "api.User"
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
-'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),  #
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
 }
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
@@ -153,3 +153,6 @@ SIMPLE_JWT = {
 }
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
