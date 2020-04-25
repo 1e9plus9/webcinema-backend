@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f403009-ed0a-4f5f-9645-a7f9d096597f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/views/movie_views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/views/user_views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/1_hcH8q4a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_backgrounds/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_backgrounds/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_backgrounds/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_backgrounds/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_backgrounds/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_backgrounds/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_backgrounds/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_backgrounds/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_posters/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_posters/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_posters/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_posters/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_posters/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/movie_posters/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/delete_all.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/populate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f47329db-979d-4d8f-a7d8-b24f37623642.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f47329db-979d-4d8f-a7d8-b24f37623642.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-    </list>
+    <list default="true" id="6f403009-ed0a-4f5f-9645-a7f9d096597f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587752859152</updated>
       <workItem from="1587752865486" duration="7066000" />
-      <workItem from="1587797653047" duration="22248000" />
+      <workItem from="1587797653047" duration="22547000" />
     </task>
     <servers />
   </component>
