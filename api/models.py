@@ -16,13 +16,13 @@ class Comment(models.Model):
 
 
 class Movie(models.Model):
-    title = models.CharField(max_length=500)
-    background = models.CharField(max_length=500)
-    poster = models.CharField(max_length=500)
-    release_date = models.CharField(max_length=500)
-    director = models.CharField(max_length=500)
-    cast = models.CharField(max_length=500)
-    synopsis = models.CharField(max_length=500)
+    title = models.CharField(max_length=500, blank=True)
+    background = models.CharField(max_length=500, blank=True)
+    poster = models.CharField(max_length=500, blank=True)
+    release_date = models.CharField(max_length=500, blank=True)
+    director = models.CharField(max_length=500, blank=True)
+    cast = models.CharField(max_length=500, blank=True)
+    synopsis = models.CharField(max_length=500, blank=True)
 
 
 class Genre(models.Model):

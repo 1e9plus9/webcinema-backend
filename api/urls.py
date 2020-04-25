@@ -6,5 +6,6 @@ urlpatterns = [
     path('user/create/', user_views.create_user),
     path('token/obtain/', jwt_views.TokenObtainPairView.as_view(), name='token_create'),
     path('token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
-    path('movies/', movie_views.get_movies)
+    path('movies/', movie_views.get_movies),
+    path('movies/<int:movie_id>/', movie_views.get_movie),
 ]

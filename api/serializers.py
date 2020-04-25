@@ -25,6 +25,8 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class MovieSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(write_only=False)
+
     class Meta:
         model = Movie
         fields = '__all__'
