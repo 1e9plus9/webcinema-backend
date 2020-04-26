@@ -2,15 +2,16 @@ from datetime import datetime
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
+class UserManager(models.Manager):
+    def filter_by_user(self, user):
+        return self.filter(user=user)
 
 class User(AbstractUser):
     profile_picture = models.CharField(max_length=500)
     pass
 
-
 class CommentPage(models.Model):
     pass
-
 
 class Comment(models.Model):
     username = models.CharField(max_length=500)
@@ -18,7 +19,6 @@ class Comment(models.Model):
     date_posted = models.DateTimeField(default=datetime.now())
     score = models.IntegerField()
     comment_page = models.ForeignKey(CommentPage, on_delete=models.CASCADE, related_name='comments', blank=True)
-
 
 class Movie(models.Model):
     title = models.CharField(max_length=500, blank=True)
@@ -29,7 +29,6 @@ class Movie(models.Model):
     cast = models.CharField(max_length=500, blank=True)
     synopsis = models.CharField(max_length=5000, blank=True)
     comment_page = models.ForeignKey(CommentPage, on_delete=models.CASCADE, blank=True)
-
 
 class Genre(models.Model):
     name = models.CharField(max_length=500)

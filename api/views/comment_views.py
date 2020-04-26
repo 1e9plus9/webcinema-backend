@@ -3,7 +3,6 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from datetime import datetime
-
 from ..models import Comment, CommentPage, User
 from ..serializers import CommentSerializer
 
