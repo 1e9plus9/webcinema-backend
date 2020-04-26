@@ -1,4 +1,4 @@
-from rest_framework import status
+from rest_framework import status, generics
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
@@ -38,3 +38,29 @@ def post_comment(request, page_id):
         return Response()
     except CommentPage.DoesNotExist:
         return Response('Page does not exist', status=status.HTTP_404_NOT_FOUND)
+
+
+@api_view(['PUT'])
+@permission_classes((IsAuthenticated, ))
+def change_score(request, comment_id):
+    try:
+        comment = Comment.objects.get(id=comment_id)
+        comment.score += int(request.data)
+        comment.save()
+        return Response()
+    except Comment.DoesNotExist:
+        return Response('Comment does not exist', status=status.HTTP_404_NOT_FOUND)
+
+
+@api_view(['DELETE'])
+@permission_classes((IsAuthenticated, ))
+def delete_comment(request, comment_id):
+    try:
+        comment = Comment.objects.get(id=comment_id)
+        if comment.username != request.user.username:
+            return Response('Not an owner of comment', status=status.HTTP_400_BAD_REQUEST)
+        else:
+            comment.delete()
+            return Response()
+    except Comment.DoesNotExist:
+        return Response('Comment does not exist', status=status.HTTP_404_NOT_FOUND)
