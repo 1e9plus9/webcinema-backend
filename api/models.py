@@ -8,11 +8,16 @@ class User(AbstractUser):
     pass
 
 
+class CommentPage(models.Model):
+    pass
+
+
 class Comment(models.Model):
-    username = models.ForeignKey('api.User', on_delete=models.CASCADE)
+    username = models.CharField(max_length=500)
     message = models.CharField(max_length=500)
     date_posted = models.DateTimeField(default=datetime.now())
     score = models.IntegerField()
+    comment_page = models.ForeignKey(CommentPage, on_delete=models.CASCADE, related_name='comments', blank=True)
 
 
 class Movie(models.Model):
@@ -22,7 +27,8 @@ class Movie(models.Model):
     release_date = models.CharField(max_length=500, blank=True)
     director = models.CharField(max_length=500, blank=True)
     cast = models.CharField(max_length=500, blank=True)
-    synopsis = models.CharField(max_length=500, blank=True)
+    synopsis = models.CharField(max_length=5000, blank=True)
+    comment_page = models.ForeignKey(CommentPage, on_delete=models.CASCADE, blank=True)
 
 
 class Genre(models.Model):

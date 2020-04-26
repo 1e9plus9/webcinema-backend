@@ -1,6 +1,6 @@
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework import serializers
-from .models import User, Movie
+from .models import User, Movie, Comment
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -26,7 +26,16 @@ class UserSerializer(serializers.ModelSerializer):
 
 class MovieSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField(write_only=False)
+    comment_page_id = serializers.IntegerField(write_only=False)
 
     class Meta:
         model = Movie
+        fields = '__all__'
+
+
+class CommentSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(write_only=False)
+
+    class Meta:
+        model = Comment
         fields = '__all__'
