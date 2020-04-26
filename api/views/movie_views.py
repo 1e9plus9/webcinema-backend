@@ -1,3 +1,5 @@
+import json
+
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.views import APIView
@@ -13,23 +15,18 @@ class MovieList(generics.ListCreateAPIView):
     permission_classes = [AllowAny]
 
 
+class MovieListAPIView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request, movie_id):
+        movie = Movie.objects.get(id=movie_id)
+        serializer = MovieSerializer(movie)
+        return Response(serializer.data)
+
+
 @api_view(['GET'])
 @permission_classes((AllowAny, ))
-def get_movie(request, movie_id):
-    try:
-        serializer = MovieSerializer(Movie.objects.get(id=movie_id))
-        return Response(serializer.data)
-    except Movie.DoesNotExist:
-        return Response('Movie does not exist.', status=status.HTTP_404_NOT_FOUND)
-
-# class MovieListAPIView(APIView):
-#     def get_object(self, id):
-#         try:
-#             movie = Movie.objects.get(id=id)
-#         except Movie.DoesNotExist as e:
-#             return Response({'error': str(e)})
-#
-#     def get_movie(self, request, movie_id):
-#         movie = self.get_object(movie_id)
-#         serializer = MovieSerializer(movie)
-#         return Response(serializer.data)
+def get_movie_by_genres(request):
+    genre_list = json.loads(request.GET['genre_list'])
+    movies = Movie.genre_manager.genre_filter(genre_list)
+    serializer = MovieSerializer(movies, many=True)

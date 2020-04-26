@@ -35,8 +35,10 @@ class GenreSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField(max_length=100)
 
+
 class CommentSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField(write_only=False)
+
     class Meta:
         model = Comment
         fields = '__all__'

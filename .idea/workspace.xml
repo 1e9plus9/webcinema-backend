@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f403009-ed0a-4f5f-9645-a7f9d096597f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/0002_auto_20200426_1630.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f47329db-979d-4d8f-a7d8-b24f37623642.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f47329db-979d-4d8f-a7d8-b24f37623642.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0002_auto_20200426_1630.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/comment_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/comment_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/views/movie_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/movie_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/user_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/user_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,6 +145,9 @@
       <workItem from="1587797653047" duration="26982000" />
       <workItem from="1587859158698" duration="13252000" />
       <workItem from="1587878518267" duration="5834000" />
+      <workItem from="1587919848026" duration="1376000" />
+      <workItem from="1587921267681" duration="13000" />
+      <workItem from="1587921383434" duration="1867000" />
     </task>
     <servers />
   </component>
@@ -162,34 +162,34 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1587859192672" />
-    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587875890082">
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587921132545">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1587875890082" />
-    <state x="462" y="138" key="FileChooserDialogImpl" timestamp="1587752927016">
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1587921132545" />
+    <state x="462" y="138" key="FileChooserDialogImpl" timestamp="1587919897970">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="462" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1587752927016" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1587876010644">
+    <state x="462" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1587919897970" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1587921490835">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1587876010644" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1587876010644">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1587921490835" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1587921490835">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1587876010644" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1587876010644">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1587921490835" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1587921490834">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1587876010644" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1587876010644">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1587921490834" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1587921490835">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1587876010644" />
-    <state x="184" y="26" key="SettingsEditor" timestamp="1587752937070">
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1587921490835" />
+    <state x="184" y="26" key="SettingsEditor" timestamp="1587921395519">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1587752937070" />
+    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1587921395519" />
     <state x="541" y="274" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1587753221738">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -198,10 +198,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="392" y="25" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.768@0.0.1366.768" timestamp="1587837709079" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1587878528451">
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1587921269101">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1587878528451" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1587921269101" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587882650875">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
